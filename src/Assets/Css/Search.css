@@ -1,0 +1,41 @@
+input{
+    width: 60%;
+    height: 40px;
+    position: relative;
+}
+.input_fileld{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.input_fileld i{
+    position: absolute;
+    margin-left:48% ;
+}
+@media screen and (min-width:426px) {
+
+    .link{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:426px) {
+
+    .input_fileld i{
+        position: absolute;
+        margin-left:40% ;
+    }
+}
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-small;
+}

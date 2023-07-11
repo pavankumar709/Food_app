@@ -1,0 +1,42 @@
+.logo{
+    height: 100px;
+    
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+.links div{
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: center ;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(17, 0, 0);
+}
+
+@media screen and (max-width:426px) {
+
+    
+.links{
+ border: 2px solid black;
+ padding: 5px;
+}
+
+}
+@media screen and (min-width:426px) {
+    .links div i{
+        margin-right: 5px;
+    }
+    
+}

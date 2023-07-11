@@ -1,0 +1,119 @@
+.Carousel img{
+    height: 450px;
+    object-fit:fill;
+    }
+    @media screen and (max-width:426px) {
+        .Carousel img{
+            height: 200px;
+        }
+    }
+    @media screen and (min-width:427px) {
+        .items button{
+            margin: 20px;
+            border-radius: 50px;
+            background-color: lightblue;
+        }
+    
+    }
+    .items{
+        height: 300px;
+        width: 250px;
+        margin: 40px 20px 20px 20px;
+        text-align: center;
+    }
+    
+    @media screen  and (min-width:1024px){
+        .items:hover {
+            border:1px solid #ddcece;
+            padding: 20px 20px 57px;
+        } 
+    }
+    @media screen and (max-width:769px) {
+        .items{
+            border:1px solid #ddcece;
+            padding: 20px 20px 57px;
+        }
+    }
+    @media screen and (max-width:426px){
+        .items{
+            height: 150px;
+            border:1px solid #ddcece;
+            padding: 10px;
+            width: 70px;
+            margin: 20px;
+            overflow-wrap: break-word;
+            
+        }
+        
+        
+        .items h6,button{
+            font-size:3px ;
+        }
+        
+        .fa-regular{
+            display: none;
+        }
+        .items span{
+            font-size: 3px;
+            padding: 0px;
+            margin-bottom: 20px;
+        }
+       .items button{
+        height: 10px;
+        width: 40px;
+        border-radius: 50px;
+        background-color: lightblue;
+       }
+    }
+    
+    
+    .span{
+        border: 1px solid green;
+        background-color: rgb(104, 241, 104);
+        padding: 2px;
+        margin-right: 30%;
+    }
+     
+    
+    .items img{
+        height: 50%;
+        width: 90%;
+        object-fit: cover;
+    }
+    .container{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .filters{
+        margin-top: 5%;
+        justify-content: space-between;
+    }
+    .filter_rate{
+        display: flex;
+    }
+    .filter_rate b{
+        margin-left: 20px;
+        color: #3d4152;
+    }
+    .filter_rate a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: #3d4152;
+        font-family: emoji;
+    }
+    @media screen and (max-width:426px) {
+        .filters{
+            justify-content: center;
+        }
+        .filter_rate b{
+            font-size: 10px;
+        }
+        .filters h2{
+            display: none;
+        }
+        .filter_rate a{
+            font-size: 12px;
+        }
+    }
