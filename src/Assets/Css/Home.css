@@ -16,7 +16,7 @@
     
     }
     .items{
-        height: 300px;
+        height: 350px;
         width: 250px;
         margin: 40px 20px 20px 20px;
         text-align: center;
@@ -39,31 +39,23 @@
             height: 150px;
             border:1px solid #ddcece;
             padding: 10px;
-            width: 70px;
+            width: 100%;
             margin: 20px;
             overflow-wrap: break-word;
             
         }
-        
-        
         .items h6,button{
-            font-size:3px ;
+            font-size:7px ;
         }
         
         .fa-regular{
             display: none;
         }
         .items span{
-            font-size: 3px;
+            font-size: 7px;
             padding: 0px;
             margin-bottom: 20px;
         }
-       .items button{
-        height: 10px;
-        width: 40px;
-        border-radius: 50px;
-        background-color: lightblue;
-       }
     }
     
     

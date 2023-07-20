@@ -33,8 +33,8 @@ function Search(props) {
   }, [])
 
   const Filter = (event) =>{
-    setapidata(data.filter(item => item.recepies_name.toLowerCase().includes(event.target.value)))
-    setvegapi(veg.filter(item => item.recepies_name.toLowerCase().includes(event.target.value)))
+    setapidata(data.filter(item => item.recepies_name.toLowerCase().includes(event.target.value.toLowerCase())))
+    setvegapi(veg.filter(item => item.recepies_name.toLowerCase().includes(event.target.value.toLowerCase())))
   }
 
   const { details , setCart, vegdetails, setvegCart} = props;
@@ -59,7 +59,7 @@ function Search(props) {
                             <div className='items'>
                             <img src={item.recepies_image} alt='image is not found'  loading='lazy'/>
                             <h6>{item.recepies_name}</h6>
-                            <h6>TYPE: {item.recepies_type} </h6>
+                            <h6>TYPE: {item.recepies_type}</h6>
                             <span className='span'><i class="fa-regular fa-star"></i>  {item.recepies_rating}</span>
                             <span><i class="fa-solid fa-indian-rupee-sign"></i>{item.recepies_orgin}</span><br></br>
                             <button type='submit' className='button' onClick={() => {setCart([...details,item]);window.alert("Successfully Added To Cart")}}>Add To Cart</button>
